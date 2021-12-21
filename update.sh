@@ -1,4 +1,6 @@
 #!/bin/sh
+
+echo "user:$USER"
 echo "version:$1"
 
 wget https://dlcdn.apache.org/logging/log4j/$1/apache-log4j-$1-bin.tar.gz --no-check-certificate
