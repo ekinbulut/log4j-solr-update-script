@@ -1,12 +1,12 @@
 #!/bin/sh
 echo "version:$1"
 
-wget https://dlcdn.apache.org/logging/log4j/$2/apache-log4j-$1-bin.tar.gz --no-check-certificate
+wget https://dlcdn.apache.org/logging/log4j/$1/apache-log4j-$1-bin.tar.gz --no-check-certificate
 
 tar -czvf /home/$USER/log4j_bakcup.tar.gz /opt/solr-8.4.1/server/lib/ext/
-tar -xzf /home/$USER/apache-log4j-$2-bin.tar.gz
+tar -xzf /home/$USER/apache-log4j-$1-bin.tar.gz
 
-cp apache-log4j-$1-bin/log4j-slf4j-impl-$2.jar /opt/solr-8.4.1/server/lib/ext/
+cp apache-log4j-$1-bin/log4j-slf4j-impl-$1.jar /opt/solr-8.4.1/server/lib/ext/
 cp apache-log4j-$1-bin/log4j-core-$1.jar /opt/solr-8.4.1/server/lib/ext/
 cp apache-log4j-$1-bin/log4j-api-$1.jar /opt/solr-8.4.1/server/lib/ext/
 cp apache-log4j-$1-bin/log4j-1.2-api-$1.jar /opt/solr-8.4.1/server/lib/ext/
