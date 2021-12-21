@@ -1,4 +1,4 @@
-# log4j-solr-update-script
+# log4j-2.11.2-solr-update-script
 
 Script takes 1 argument;
 
